@@ -1,0 +1,58 @@
+<nav style="margin:auto" class="navbar navbar-expand-lg bg-dark">
+
+    <a style="color: white;" class="navbar-brand">BHARAT HOSPITALS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+                <a style="color: white;" class="nav-link active" aria-current="page"
+                    routerLink="/appointmentlist" onclick="appointmentlist">Back</a>
+            </li>
+        </ul>
+
+        <div class="mx-2">
+
+            <button style="margin: 5px;" class="btn btn-danger" data-toggle="modal" data-target="#loginModal"><a
+                    style="color:white;" href="javascript:void(0);" (click)="logout()">Logout</a></button>
+
+        </div>
+
+    </div>
+    
+</nav>
+
+
+<div class="container">
+
+    <h2 class="text-center">Add New Appointment</h2>
+
+    <form (ngSubmit) = "onSubmit()">
+
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" id="name" class="form-control" name="name" placeholder="Enter Name" [(ngModel)]="appointment.name">
+        </div>
+        <div class="form-group">
+            <label>Age</label>
+            <input type="text" id="age" class="form-control" name="age" placeholder="Enter Age" [(ngModel)]="appointment.age">
+        </div>
+        <div class="form-group">
+            <label>Date</label>
+            <input type="text" id="date" class="form-control" name="date" placeholder="Enter Date" [(ngModel)]="appointment.date">
+        </div>
+        <div class="form-group">
+            <label>Time</label>
+            <input type="text" id="time" class="form-control" name="time" placeholder="Enter Time" [(ngModel)]="appointment.time">
+        </div>
+        <div class="form-group">
+            <label>Symtoms</label>
+            <input type="text" id="symtoms" class="form-control" name="symtoms" placeholder="Enter Symtoms" [(ngModel)]="appointment.symtoms">
+        </div>
+
+        <button type="submit" class="text-center" class="btn btn-success">Submit</button>
+    </form>
+</div>

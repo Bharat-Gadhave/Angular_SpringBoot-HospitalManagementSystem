@@ -1,0 +1,60 @@
+<nav style="margin:auto" class="navbar navbar-expand-lg bg-dark">
+
+    <a style="color: white;" class="navbar-brand">BHARAT HOSPITALS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+                <a style="color: white;" class="nav-link active" aria-current="page" routerLink="/doctor">Back</a>
+            </li>
+        </ul>
+
+        <div class="mx-2">
+            <button style="margin: 5px;" class="btn btn-danger" data-toggle="modal" data-target="#loginModal">
+                <a style="color:white;" href="javascript:void(0);" routerLink="/home">Logout</a></button>
+        </div>
+        
+
+    </div>
+
+</nav>
+
+
+<div class="container">
+
+    <h2 class="text-center">Update Patient !!!</h2>
+
+    <form (ngSubmit)="onSubmit()">
+
+        <div class="form-group">
+            <label >Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter the Name" class="form-control" [(ngModel)]="patient.pname"/>
+        </div>
+
+        <div class="form-group">
+            <label >City</label>
+            <input type="text" id="City" name="City" placeholder="Enter the City" class="form-control" [(ngModel)]="patient.pcity"/>
+        </div>
+
+        <div class="form-group">
+            <label >Number</label>
+            <input type="text" id="Number" name="Number" placeholder="Enter the Number" class="form-control" [(ngModel)]="patient.pnumber"/>
+        </div>
+
+        <div class="form-group">
+            <label >BloodGroup</label>
+            <input type="text" id="bloodGroup" name="bloodGroup" placeholder="Enter the bloodGroup" class="form-control" [(ngModel)]="patient.bloodGroup"/>
+        </div>
+
+        <div class="form-group">
+            <label >Urgency</label>
+            <input type="text" id="urgency" name="urgency" placeholder="Enter the Urgency" class="form-control" [(ngModel)]="patient.urgency"/>
+        </div>
+
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</div>

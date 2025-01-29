@@ -1,0 +1,54 @@
+<nav style="margin:auto" class="navbar navbar-expand-lg bg-dark">
+
+    <a style="color: white;" class="navbar-brand">BHARAT HOSPITALS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a style="color: white;" class="nav-link active" aria-current="page" routerLink="/view-medicine">Back</a>
+            </li>
+        </ul>
+
+        <div class="mx-2">
+            <button style="margin: 5px;" class="btn btn-danger" data-toggle="modal" data-target="#loginModal">
+                <a style="color:white;" href="javascript:void(0);" (click)="logout()">Logout</a></button>
+        </div>
+        
+
+    </div>
+
+</nav>
+
+
+<div class="container">
+
+    <h2 class="text-center">Add New Medicine... !!!</h2>
+
+    <form (ngSubmit)="onSubmit()">
+
+        <div class="form-group">
+            <label >Name Of Drug</label>
+            <input type="text" id="name" name="name" placeholder="Enter the Name" class="form-control" [(ngModel)]="medicine.name"/>
+        </div>
+
+        <div class="form-group">
+            <label >Price</label>
+            <input type="text" id="price" name="price" placeholder="Enter the Price" class="form-control" [(ngModel)]="medicine.price"/>
+        </div>
+
+        <div class="form-group">
+            <label >Stock</label>
+            <input type="text" id="stock" name="stock" placeholder="Enter the Stock" class="form-control" [(ngModel)]="medicine.stock"/>
+        </div>
+
+        <div class="form-group">
+            <label >Expiry Date</label>
+            <input type="text" id="expirydate" name="expirydate" placeholder="Enter the ExpiryDate" class="form-control" [(ngModel)]="medicine.expirydate"/>
+        </div>
+
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</div>
