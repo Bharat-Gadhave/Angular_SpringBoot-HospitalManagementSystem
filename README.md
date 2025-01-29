@@ -127,23 +127,26 @@ npm install
 ng serve
 Visit http://localhost:4200 to access the application.
 
-📝 API Endpoints
+📝 **API Endpoints**
 Method	Endpoint	Description
-GET	/patients	Fetch all patients
-POST	/patients	Add a new patient
-GET	/doctors	Fetch all doctors
-POST	/appointments	Book an appointment
-GET	/bills	Retrieve billing details
-**🔐** **Security**
-**🔒 Spring Security ensures authentication and authorization.**
-**🔒 JWT (JSON Web Token) secures sensitive routes and data.**
-**📸 Screenshots**
+**GET**	/patients	Fetch all patients
+**POST**	/patients	Add a new patient
+**GET**	/doctors	Fetch all doctors
+**POST**	/appointments	Book an appointment
 
-
-**👨‍💻 Contributors**
+👨‍💻 **Contributors**
 **Bharat Gadhave** ([GitHub](https://github.com/Bharat-Gadhave))
 
 
-**📞 Contact**
-**📧 Email: bharatgadhave777@gmail.com**
-**🔗 LinkedIn: Bharat Gadhave**
+📞 **Contact**
+📧 **Email: bharatgadhave777@gmail.com**
+🔗 **LinkedIn: Bharat Gadhave**
+
+
+### **Key Improvements:**
+✔ **Bold text** for important sections.  
+✔ **Proper headings and formatting** for easy readability.  
+✔ **Markdown-friendly syntax** for a clean GitHub README look.  
+
+Let me know if you need any further modifications! 🚀😊
+
