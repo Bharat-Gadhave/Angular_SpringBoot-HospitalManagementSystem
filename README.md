@@ -1,59 +1,158 @@
-# AngularSpringBootHMS
+Angular Spring Boot Hospital Management System
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
+📌 Project Overview
 
-## Development server
+The Hospital Management System is a web-based application that simplifies hospital administration by efficiently managing patient records, appointments, doctor schedules, and billing. This full-stack project integrates Angular for the frontend and Spring Boot for the backend, ensuring a seamless user experience.
 
-To start a local development server, run:
+🚀 Features
 
-```bash
+Patient Management: Add, update, and delete patient records.
+
+Doctor Management: Maintain doctor details and schedules.
+
+Appointment Booking: Schedule and track patient appointments.
+
+Billing System: Generate and manage invoices.
+
+Authentication & Authorization: Secure login for doctors and staff.
+
+Dashboard: Overview of key hospital activities.
+
+🛠️ Tech Stack
+
+Frontend
+
+Angular (TypeScript, HTML, CSS, Bootstrap)
+
+RxJS (Reactive programming for Angular services)
+
+Backend
+
+Spring Boot (Java, Spring MVC, Spring Security)
+
+Hibernate/JPA (Database interactions)
+
+MySQL (Database management)
+
+Maven (Project management & dependency management)
+
+Apache Tomcat (Server deployment)
+
+🏗️ Project Setup
+
+Prerequisites
+
+Ensure you have the following installed:
+
+Node.js & npm (for Angular frontend)
+
+Angular CLI
+
+Java JDK 17+
+
+Spring Boot
+
+MySQL
+
+Maven
+
+Backend Setup (Spring Boot)
+
+Clone the repository:
+
+git clone https://github.com/Bharat-Gadhave/Angular_SpringBoot-HospitalManagementSystem.git
+cd Angular_SpringBoot-HospitalManagementSystem/backend
+
+Configure application.properties with your MySQL database credentials:
+
+spring.datasource.url=jdbc:mysql://localhost:3306/hospital_db
+spring.datasource.username=root
+spring.datasource.password=your_password
+
+Build and run the backend:
+
+mvn clean install
+mvn spring-boot:run
+
+Frontend Setup (Angular)
+
+Navigate to the frontend directory:
+
+cd Angular_SpringBoot-HospitalManagementSystem/frontend
+
+Install dependencies:
+
+npm install
+
+Run the Angular app:
+
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Open http://localhost:4200 in your browser.
 
-## Code scaffolding
+📝 API Endpoints
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Method
 
-```bash
-ng generate component component-name
-```
+Endpoint
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Description
 
-```bash
-ng generate --help
-```
+GET
 
-## Building
+/patients
 
-To build the project run:
+Fetch all patients
 
-```bash
-ng build
-```
+POST
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+/patients
 
-## Running unit tests
+Add a new patient
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+GET
 
-```bash
-ng test
-```
+/doctors
 
-## Running end-to-end tests
+Fetch all doctors
 
-For end-to-end (e2e) testing, run:
+POST
 
-```bash
-ng e2e
-```
+/appointments
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Book an appointment
 
-## Additional Resources
+GET
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+/bills
+
+Retrieve billing details
+
+🔐 Security
+
+Uses Spring Security for authentication and role-based authorization.
+
+Protects sensitive routes and data with JWT (JSON Web Token).
+
+📸 Screenshots
+
+
+
+👨‍💻 Contributors
+
+Bharat Gadhave (GitHub)
+
+📜 License
+
+This project is licensed under the MIT License.
+
+📞 Contact
+
+For any queries, feel free to reach out:
+
+📧 Email: bharatgadhave777@gmail.com
+
+🔗 LinkedIn: Bharat Gadhave
+
+🚀 Happy Coding!
+
