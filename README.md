@@ -54,9 +54,3 @@ spring.datasource.password=your_password
 mvn clean install
 mvn spring-boot:run
 
-
-
-### **Key Improvements:**
-✔ **Contact** bharatgadhave777@gmail.com | 8698320230.  
-✔ **Auther** Bharat Gadhave.  
-
